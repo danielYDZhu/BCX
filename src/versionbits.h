@@ -77,7 +77,7 @@ ThresholdState VersionBitsState(const CBlockIndex* pindexPrev, const Consensus::
 BIP9Stats VersionBitsStatistics(const CBlockIndex* pindexPrev, const Consensus::Params& params, Consensus::DeploymentPos pos);
 int VersionBitsStateSinceHeight(const CBlockIndex* pindexPrev, const Consensus::Params& params, Consensus::DeploymentPos pos, VersionBitsCache& cache);
 uint32_t VersionBitsMask(const Consensus::Params& params, Consensus::DeploymentPos pos);
-bool IsVersionBitsActive(const CBlockIndex* pindexPrev, const Consensus::Params& params, Consensus::DeploymentPos pos, VersionBitsCache& cache);
+//bool IsVersionBitsActive(const CBlockIndex* pindexPrev, const Consensus::Params& params, Consensus::DeploymentPos pos, VersionBitsCache& cache);
 std::string VersionBitsStateName(ThresholdState state);
 
 /** What bitmask determines whether bitcoinx hard fork is in use */

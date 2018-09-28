@@ -214,10 +214,10 @@ uint32_t VersionBitsMask(const Consensus::Params& params, Consensus::DeploymentP
     return VersionBitsConditionChecker(pos).Mask(params);
 }
 
-bool IsVersionBitsActive(const CBlockIndex* pindexPrev, const Consensus::Params& params, Consensus::DeploymentPos pos, VersionBitsCache& cache)
-{
-    return VersionBitsState(pindexPrev, params, pos, cache) == THRESHOLD_ACTIVE;
-}
+//bool IsVersionBitsActive(const CBlockIndex* pindexPrev, const Consensus::Params& params, Consensus::DeploymentPos pos, VersionBitsCache& cache)
+//{
+//    return VersionBitsState(pindexPrev, params, pos, cache) == THRESHOLD_ACTIVE;
+//}
 
 std::string VersionBitsStateName(ThresholdState state)
 {
